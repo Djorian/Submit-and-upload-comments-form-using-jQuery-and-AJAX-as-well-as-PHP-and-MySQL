@@ -1,0 +1,94 @@
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+main,
+header,
+footer {
+	color: #d7d7d7;
+	background-color: #2d3136;
+}
+
+.red-star {
+	color: #be393b;
+}
+
+.submit-comment-button-color {
+	color: #fff;
+	background-color: #be393b;
+}
+
+.submit-comment-button-color:hover {
+	color: #2d3136;
+}
+
+.form-control::placeholder {
+	color: #d7d7d7;
+}
+
+.form-control {
+	background-color: #2d3136 !important;
+	color: #d7d7d7 !important;
+	border: 1px solid #4C4F53 !important;
+	border-color: 1px solid #4C4F53 !important;
+	border-radius: .15rem !important;
+}
+
+.form-control:focus,
+.form-control:active,
+.form-control:hover {
+	background-color: #2d3136;
+	color: #d7d7d7;
+	border-color: 1px solid #be393b;
+	box-shadow: 0 0 0 0.1rem #be393b;
+}
+
+.comments-username-green {
+	color: #fff;
+	background-color: #58AD52;
+	margin-bottom: 0;
+	padding: 20px 0 20px 0;
+}
+
+.comments-wrap-email-comment-green {
+	background-color: #DEEBDE;
+}
+
+.comments-wrap-email-comment-green .email-green {
+	padding: 35px 0 20px 0;
+	color: #58AD52;
+}
+
+.comments-wrap-email-comment-green .comment {
+	padding-bottom: 100px;
+	color: #2d3136;
+}
+
+.comments-wrap-email-comment-green .comment {
+	margin: 20px 0 100px 0;
+}
+
+.comments-username-gray {
+	color: #fff;
+	background-color: #4B596C;
+	margin-bottom: 0;
+	padding: 20px 0 20px 0;
+}
+
+.comments-wrap-email-comment-gray {
+	background-color: #E9EEF3;
+}
+
+.comments-wrap-email-comment-gray .email-gray {
+	padding: 35px 0 20px 0;
+	color: #6D737B;
+}
+
+.comments-wrap-email-comment-gray .comment {
+	padding-bottom: 100px;
+	color: #2d3136;
+}
+
+.comments-wrap-email-comment-gray .comment {
+	margin: 20px 0 100px 0;
+}

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Форма комментариев" />
+    <meta name="author" content="Егоров Дмитрий" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <title>Форма комментариев</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="mt-4 mb-4">
+                        <a href="https://www.djorian.com/"><img alt="main-logo" src="img/main-logo.png"></a>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="text-center mb-4">
+                        <a href="#"><img alt="contact-logo" src="img/contact-logo.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <form id="send-comment-form">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="control-group">
+                                    <div class="form-group floating-label-form-group controls">
+                                        <label for="username">Имя <span class="red-star">*</span></label>
+                                        <input type="text" minlength="5" class="form-control" placeholder="Имя"
+                                            id="username" required>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="form-group floating-label-form-group controls">
+                                        <label for="email">E-mail <span class="red-star">*</span></label>
+                                        <input type="email" class="form-control" placeholder="E-mail" id="email"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="control-group">
+                                    <div class="form-group floating-label-form-group controls">
+                                        <label for="comment">Комментарий <span class="red-star">*</span></label>
+                                        <textarea rows="5" cols="50" minlength="10" maxlength="400" class="form-control"
+                                            placeholder="Комментарий" id="comment" required></textarea>
+                                    </div>
+                                </div>
+                                <div id="send-comment-form-message-block"></div>
+                                <div class="form-submit mt-5 float-right">
+                                    <button class="btn font-weight-bold submit-comment-button-color mb-5" type="submit"
+                                        id="send-comment-form-message-button">Отправить</button>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-center mt-5 mb-5">Комментарии</h2>
+                <div class="row text-center text-lg-left" id="comments-container"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col-lg-6 text-left">
+                    <a href="https://www.djorian.com"><img alt="footer-logo" class="mt-3 mb-3"
+                            src="img/footer-logo.png"></a>
+                </div>
+                <div class="col-lg-6 text-right">
+                    <a
+                        href="https://github.com/Djorian/ajax-comments-html5-juery-bootstrap-4-php-mysql-jqBootstrapValidation"><img
+                            alt="git-logo" class="mt-3 mb-3" src="img/git-logo.png"></a>
+                    <a href="https://www.instagram.com/djorian88"><img alt="instagram-logo" class="mt-3 mb-3 ml-3"
+                            src="img/instagram-logo.png"></a>
+                    <a href="https://www.linkedin.com/in/djorian"><img alt="likedin-logo" class="mt-3 mb-3 ml-3"
+                            src="img/likedin-logo.png"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery/jqBootstrapValidation.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
